@@ -1,0 +1,892 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #000000;
+    
+}
+
+
+
+.contenedor {
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.contenedor{
+background-image: url(src/tierra.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+
+@media (max-width: 768px) {
+  .contenedor{
+background-image: url(src/tierra.png);
+background-repeat: no-repeat;
+background-position: right ;
+}
+
+  }
+
+  @media (max-width: 576px) {
+  .contenedor{
+background-image: url(src/tierra.png);
+background-repeat: no-repeat;
+background-position: right  ;
+}
+
+  }
+
+  @media (max-width: 400px) {
+  .contenedor{
+background-image: url(src/tierra.png);
+background-repeat: no-repeat;
+background-position: right ;
+}
+  }
+
+
+
+
+.lista {
+  margin-top: 10px;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+   text-align: justify;
+}
+
+
+.contenedor .orden {
+  display: flex;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.contenedor .orden .or {
+  text-decoration: none;
+  color: #8f7e7e;
+  margin-right: 25px;
+  font-size: 15px;
+  opacity: 0.8;
+  margin-bottom: 35px;
+  border-top: 0;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+.contenedor .or:hover {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  transform: scale(1.05);
+}
+
+
+.contenedor h1 {
+  font-family: 'Segoe UI';
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 1px;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 80px;
+}
+
+.contenedor p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 0.5em ;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px #000000;
+  justify-content: center;
+
+}
+
+.botton01 {
+   width: 100px;
+   height: 50px;
+    border: solid 1.5px #fff  ;
+    color: #fff  ; 
+    border-radius: 15px;
+    font-size: 14px;     /*tamano de la letra */
+    background-color: transparent;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.botton01:hover {
+  transform: scale(0.97);
+}
+
+
+
+.github-icon {
+  display: flex;
+  color: #fff;
+  font-size: 2em;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  right: 100px;
+}
+
+
+.github-icon:hover{
+  transform: scale(1.4);
+}
+
+
+.ima01{
+height: 120px;
+margin-top: 15px;
+perspective: 1000px;
+transform-origin: center;
+transition: transform  0.80s ease-in-out;
+cursor: pointer;
+}
+
+
+.ima01:hover{
+transform: rotate(180deg);
+}
+
+
+.nuves{
+ width: 100%;
+  height: 200px;
+}
+
+.nuve02{
+  width: 662px;
+position: relative;
+top: -305px;
+left: 663px;
+}
+.nuve03{
+  width: 662px;
+position: relative;
+top: -305px;
+right: 663px;
+
+}
+
+
+
+.sobre_mi{
+width: 90%;
+height: 700px;
+ flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  border: 1px solid #fff;
+ margin-bottom: 50px;
+}
+
+.lista01 {
+  width: 100%;
+  height: 40px;
+  margin-top: 80px;
+  justify-items: center;
+  justify-content: center;
+   text-align: justify;
+   margin-bottom: 60px;
+}
+
+
+.orden {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.orden .or {
+  text-decoration: none;
+  color: #8f7e7e;
+  margin-right: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+  border-top: 0;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+.or:hover {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  transform: scale(1.05);
+}
+
+.foto{
+    width: 150px;
+  height: 150px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  background-image: url(rrc_inco/yop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tex{
+  width: 300px;
+  height: 180px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+}
+
+.todo{
+  margin-top: 40px;
+ margin-left: 80px;
+ margin-right: 80px;
+ color: #fff;
+}
+
+.sobre_mi img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  filter: grayscale(100%);
+}
+
+.sobre_mi .js{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+
+.sobre_mi , img:hover{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+
+.container04{
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  border: 1px solid #fff;
+  justify-content: center;
+}
+
+.lista04 {
+  margin-top: 80px;
+  text-align: justify;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.orden {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+
+.orden .or {
+  text-decoration: none;
+  color: #8f7e7e;
+  margin-right: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 35px;
+  border-top: 0;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.or:hover {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  transform: scale(1.05);
+}
+
+.nexus{
+width: 50px;
+height: 50px;
+border-radius: 10px;
+}
+
+.tex01{
+  width: 320px;
+  height: 220px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+
+}
+
+ .github-icon01{
+ color: #fff;
+margin-right: 10px;
+ 
+ }
+
+ .botton02{
+    border: solid 1.5px #fff  ;
+    color: #fff  ; 
+    border-radius: 15px;
+    font-size: 15px;     /*tamano de la letra */
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    width: 150px;
+ }
+
+ .botton02:hover{
+  transform: scale(0.9);
+ }
+
+
+ .formulario{
+width: 150px;
+height: 200px;
+border-radius: 10px;
+  position: relative;
+  top: -150px;
+  left: 400px;
+}
+
+.tex02{
+  width: 620px;
+  height: 220px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+  text-align: left;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+   @media (max-width: 1280px) {
+.nuve02{
+  width: 1280px;
+  height: 400px;
+  position: relative;
+  left: 5px;
+
+}
+.nuve03{
+  width: 0;
+}
+
+.container04{
+  height: 1100px;
+}
+
+
+  }
+
+@media (max-width: 1200px) {
+.foto{
+    width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  position: static;
+  top: 430px;
+  left: 430px;
+  background-image: url(rrc_inco/yop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.todo{
+   
+  margin-top: 100px;
+ margin-left: 80px;
+ margin-right: 80px;
+ color: #fff;
+}
+
+.tex{
+  width: 250px;
+  height: 300px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 10px;
+  font-family: Arial;
+  margin-top: -20px;
+  margin-bottom: -50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+ }
+
+
+
+   @media (max-width: 1024px) {
+.nuve02{
+  width: 1000px;
+  height: 400px;
+  position: relative;
+  left: 5px;
+
+}
+.nuve03{
+width: 0;
+}
+
+.container04{
+  height: 1100px;
+}
+
+
+  }
+
+
+   @media (max-width: 912px) {
+.nuve02{
+  width: 900px;
+  height: 400px;
+position: relative;
+  left: -5px;
+}
+.nuve03{
+width: 0;
+}
+  }
+
+   @media (max-width: 820px) {
+.nuve02{
+  width: 395px;
+  height: 400px;
+  position: relative;
+left: 5px;
+}
+ 
+.nuve03{
+  width: 395px;
+  height: 400px;
+ position: relative;
+ top:-710px ;
+left: 400px;
+}
+
+.container04{
+  height: 1100px;
+}
+
+}
+
+
+
+
+/* Estilos específicos para teléfonos (ancho máximo de 600px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 11px; /* Tamaño de fuente base más pequeño */
+  }
+
+  .contenedor {
+    width: 100%; /* Ocupa casi todo el ancho en teléfonos */
+   padding: 0;
+   margin: 0;
+   border: 1px solid #fff;
+   
+  }
+
+
+  .contenedor h1 {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+
+  .contenedor p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+
+  .botton01 {
+    width: 90%;
+    max-width: none; /* Permite que ocupe el ancho */
+    height: 45px;
+    font-size: 1em;
+    border-radius: 10px;
+  }
+
+
+.nuves{
+ width: 80%;
+  height: 200px;
+  position: relative;
+  top: -300px;
+}
+
+.nuve02{
+  width: 755px;
+  height: 400px;
+  position: static;
+ 
+}
+
+.nuve03{
+  width: 0;
+}
+
+.sobre_mi{
+width: 91%;
+height: 800px;
+ flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+.container04{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  border: 1px solid #fff;
+  justify-content: center;
+}
+
+.nexus{
+width: 30px;
+height: 30px;
+border-radius: 10px;
+}
+
+.tex01{
+  width: 250px;
+  height: 300px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  
+}
+ .botton02{
+    border: solid 1px #fff  ;
+    color: #fff  ; 
+    border-radius: 15px;
+    font-size: 10px;     /*tamano de la letra */
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+      margin-left: -50px;
+ }
+
+.sobre_mi img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+
+.sobre_mi .js{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+
+
+.todo{
+  margin-top: 80px;
+ margin-left: 60px;
+ margin-right: 80px;
+ color: #fff;
+ 
+ 
+}
+
+.tex02{
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+  text-align: left;
+}
+
+ .formulario{
+width: 0;
+}
+
+
+.github-icon {
+  display: flex;
+  color: #fff;
+  font-size: 2em;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  right: 50px;
+}
+
+
+
+  .contenedor .orden .or {
+    font-size: 1.1em;
+  }
+
+ .lista01 .orden .or{
+    font-size: 1.1em;
+ }
+
+ .lista04 .orden .or{
+    font-size: 1.1em;
+ }
+
+
+.container04{
+  height: 1100px;
+}
+
+ }
+
+
+
+   @media (max-width: 540px) {
+.nuve02{
+  width: 520px;
+  height: 400px;
+  position: static;
+}
+.nuve03{
+width: 0;
+}
+
+
+
+.tex{
+  width: 190px;
+  height: 330px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 10px;
+  font-family: Arial;
+  margin-top: -20px;
+  margin-bottom: -50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.container04{
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  border: 1px solid #fff;
+  justify-content: center;
+}
+
+.tex02{
+  width: 250px;
+  height: 230px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px; 
+  border: 1px solid #fff;
+  font-size: 11px;
+  font-family: Arial;
+  margin-top: -50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  
+}
+
+
+  }
+
+
+
+
+
+
+ @media (max-width: 430px) {
+
+.nuve02{
+  width: 415px;
+  height: 400px;
+  position: static;
+}
+
+.nuve03{
+width: 0;
+}
+
+
+  .lista .orden {
+      margin-left: -30px;
+    flex-direction: column; /* Apila los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces */
+  }
+
+  .contenedor .orden .or {
+    margin: 10px 0; /* Espacio vertical entre enlaces */
+    font-size: 1.1em;
+    margin-right: 0; /* Elimina margen derecho innecesario */
+  }
+
+
+  .lista01  .orden  {
+      margin-left: -50px;
+    flex-direction: column; /* Apila los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces */
+  }
+
+ .lista01 .orden .or{
+    margin: 10px 0; /* Espacio vertical entre enlaces */
+    font-size: 1.1em;
+    margin-right: 0; /* Elimina margen derecho innecesario */
+    margin-top: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+ }
+
+
+  .lista04 .orden  {
+      margin-left: -50px;
+    flex-direction: column; /* Apila los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces */
+  }
+
+ .lista04 .orden .or{
+    margin: 10px 0; /* Espacio vertical entre enlaces */
+    font-size: 1.1em;
+    margin-right: 0; /* Elimina margen derecho innecesario */
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+.tex{
+  width: 190px;
+  height: 340px;
+  margin-top: 100px;
+}
+  }
+
+ 
+   @media (max-width: 414px) {
+.nuve02{
+  width: 395px;
+  height: 400px;
+  position: static;
+}
+
+.nuve03{
+width: 0;
+}
+
+.tex{
+  width: 190px;
+  height: 340px;
+  margin-top: 100px;
+}
+
+
+  }
+
+ @media (max-width: 412px) {
+
+.nuve02{
+  width: 395px;
+  height: 400px;
+  position: static;
+}
+.nuve03{
+width: 0;
+}
+  }
+
+
+ @media (max-width: 390px) {
+
+.nuve02{
+  width: 380px;
+  height: 400px;
+  position: static;
+}
+.nuve03{
+width: 0;
+}
+  }
+
+
+ @media (max-width: 375px) {
+
+.nuve02{
+  width: 357px;
+  height: 400px;
+  position: static;
+}
+.nuve03{
+width: 0;
+
+}
+
+.tex{
+  width: 190px;
+  height: 340px;
+  margin-bottom: -50px;
+}
+
+
+  }
+
+
+   @media (max-width: 360px) {
+.nuve02{
+  width: 345px;
+  height: 400px;
+  position: static;
+}
+.nuve03{
+width: 0;
+}
+  }
+
+
